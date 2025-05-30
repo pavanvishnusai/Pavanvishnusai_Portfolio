@@ -1,0 +1,458 @@
+/* Screens below 1400px */
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 90vh; /* Increased height for better alignment */
+    margin-bottom: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center alignment */
+    justify-content: center;
+  }
+
+  .about-containers {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+
+  /* Certifications Section Vertical Layout */
+  .certification-container {
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center;
+    text-align: center; /* Center-align text */
+    gap: 1.5rem; /* Add spacing between items */
+  }
+
+  .certification-image img {
+    max-width: 100%; /* Ensure image does not overflow */
+    height: auto;
+  }
+
+  .certification-text {
+    max-width: 90%; /* Constrain text width for better readability */
+  }
+}
+
+/* Screens below 1200px */
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+  }
+
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+
+  #profile,
+  .section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Centralized text for better view */
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  section,
+  .section-container {
+    height: fit-content;
+  }
+
+  section {
+    margin: 0 5%;
+  }
+
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+    border-radius: 50%; /* To maintain circular image */
+    overflow: hidden; /* Crop overflowing parts */
+  }
+
+  .about-containers {
+    margin-top: 0;
+  }
+}
+
+/* Screens below 600px */
+@media screen and (max-width: 600px) {
+  @media screen and (max-width: 600px) {
+    #profile {
+      height: auto;
+      margin-bottom: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .section__pic-container {
+      width: 200px; /* Adjust width */
+      height: 200px; /* Adjust height */
+      border-radius: 50%; /* Circular profile picture */
+      overflow: hidden; /* Hide overflow for clean look */
+      animation: profileFloat 4s ease-in-out infinite; /* Add floating animation */
+    }
+  
+    .section__pic-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensure image fits well inside the circle */
+    }
+  
+    @keyframes profileFloat {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px); /* Floating effect */
+      }
+    }
+  
+    .section__text__p2 {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+  
+    .title {
+      font-size: 1.5rem;
+      margin: 1rem 0;
+    }
+  
+    .btn-container {
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+  
+    .btn {
+      width: auto;
+      padding: 0.8rem;
+      font-size: 1rem;
+    }
+  
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+    }
+  }
+  
+  #contact,
+  footer {
+    height: 40vh;
+  }
+
+  #profile {
+    height: 90vh;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Adjust for small screens */
+    text-align: center; /* Centralized text */
+  }
+
+  article {
+    font-size: 1rem;
+  }
+
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+
+  .contact-info-container {
+    margin: 0;
+  }
+
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .section__pic-container {
+    width: auto;
+    height: 46vw;
+    justify-content: center;
+    border-radius: 50%; /* Circular display */
+    overflow: hidden; /* Crop overflowing content */
+  }
+
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .text-container {
+    text-align: justify;
+  }
+
+/* Certifications Section Vertical Layout */
+.certification-container {
+  display: flex;
+  flex-direction: column; /* Stack vertically for smaller screens */
+  align-items: center;
+  justify-content: center; /* Center everything */
+  text-align: justify; /* Justify the text content */
+  gap: 1.5rem; /* Space between items */
+  padding: 1rem; /* Add padding for spacing */
+}
+
+.certification-image img {
+  width: 50%; /* Adjust width for better fit */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Ensure the image centers */
+  margin: 0 auto; /* Horizontally center the image */
+}
+
+.certification-text {
+  max-width: 80%; /* Constrain text width for readability */
+  text-align: justify; /* Justify the text for better alignment */
+  margin: 0 auto; /* Center the text block */
+}
+
+.certification-text h2 {
+  text-align: center; /* Center the heading */
+  margin-bottom: 1rem; /* Add spacing below heading */
+}
+.about-details-container {
+  display: flex;
+  flex-direction: column; /* Stack boxes vertically */
+  align-items: center; /* Center-align each box */
+  gap: 1rem; /* Add spacing between boxes */
+  padding: 0 1rem; /* Add side padding */
+}
+
+.about-containers {
+  width: 100%; /* Full width of the screen */
+  max-width: 350px; /* Limit max width for better readability */
+  text-align: center; /* Center-align text inside the boxes */
+  padding: 1rem; /* Add padding inside each box */
+  border-radius: 10px; /* Smooth corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better appearance */
+  background-color: white; /* Ensure consistent background */
+}
+
+.details-container h3 {
+  font-size: 1.4rem; /* Adjust font size for headings */
+  margin-bottom: 0.5rem; /* Add spacing below heading */
+}
+
+.details-container p {
+  font-size: 1rem; /* Adjust font size for content */
+  line-height: 1.5; /* Improve readability */
+}
+
+.text-container {
+  width: 100%; /* Use full width */
+  text-align: justify; /* Justify text for a clean look */
+  margin: 1rem auto; /* Add spacing around the text */
+  padding: 0 1rem; /* Add side padding for readability */
+}
+}
+
+/* Certifications Section for Screens Below 400px */
+@media screen and (max-width: 400px) {
+  
+  .certification-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    justify-content: center; /* Center everything */
+    text-align: justify; /* Justify text alignment */
+    gap: 1rem; /* Space between items */
+    padding: 1rem; /* Add some padding */
+  }
+
+  .certification-image img {
+    width: 70%; /* Reduce image size for small screens */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure proper alignment */
+    margin: 0 auto; /* Center the image horizontally */
+  }
+
+  .certification-text {
+    max-width: 90%; /* Constrain text width for readability */
+    text-align: justify; /* Justify text alignment */
+    margin: 0 auto; /* Center the text block */
+  }
+
+  .certification-text h2 {
+    text-align: center; /* Center the heading */
+    font-size: 1.5rem; /* Adjust font size */
+    margin-bottom: 0.8rem; /* Reduce spacing */
+  }
+
+  .certification-text p {
+    font-size: 1rem; /* Smaller font size for text */
+    line-height: 1.5; /* Improve readability */
+  }
+
+  .certification-container .btn-container {
+    margin-top: 0.5rem; /* Reduce spacing above the button */
+  }
+
+  .btn-container .btn {
+    font-size: 1rem; /* Adjust button font size */
+    padding: 0.5rem 1rem; /* Adjust padding for smaller buttons */
+  }
+  .about-details-container {
+    display: flex;
+    flex-direction: column; /* Stack boxes vertically */
+    align-items: center; /* Center-align each box */
+    gap: 1rem; /* Add spacing between boxes */
+    padding: 0 1rem; /* Add side padding */
+  }
+
+  .about-containers {
+    width: 100%; /* Full width of the screen */
+    max-width: 350px; /* Limit max width for better readability */
+    text-align: center; /* Center-align text inside the boxes */
+    padding: 1rem; /* Add padding inside each box */
+    border-radius: 10px; /* Smooth corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for better appearance */
+    background-color: white; /* Ensure consistent background */
+  }
+
+  .details-container h3 {
+    font-size: 1.4rem; /* Adjust font size for headings */
+    margin-bottom: 0.5rem; /* Add spacing below heading */
+  }
+
+  .details-container p {
+    font-size: 1rem; /* Adjust font size for content */
+    line-height: 1.5; /* Improve readability */
+  }
+
+  .text-container {
+    width: 100%; /* Use full width */
+    text-align: justify; /* Justify text for a clean look */
+    margin: 1rem auto; /* Add spacing around the text */
+    padding: 0 1rem; /* Add side padding for readability */
+  }
+}
+
+
+
+/* Certifications Section for iPad Pro (1024px) */
+@media screen and (max-width: 1024px) {
+  .certification-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    text-align: center; /* Center-align text */
+    gap: 2rem; /* Space between items */
+    padding: 2rem; /* Add consistent padding */
+  }
+
+  .certification-image img {
+    width: 60%; /* Adjust image size for iPad screens */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure proper alignment */
+    margin: 0 auto; /* Horizontally center the image */
+  }
+
+  .certification-text {
+    max-width: 80%; /* Constrain text width for readability */
+    text-align: center; /* Center-align the text */
+    margin: 0 auto; /* Center the text block */
+  }
+
+  .certification-text h2 {
+    font-size: 1.8rem; /* Adjust font size for iPad screens */
+    margin-bottom: 1rem; /* Add spacing below heading */
+  }
+
+  .certification-text p {
+    font-size: 1.2rem; /* Slightly smaller font size */
+    line-height: 1.6; /* Improve readability */
+  }
+
+  .btn-container {
+    margin-top: 1rem; /* Add spacing above the button */
+  }
+
+  .btn-container .btn {
+    font-size: 1.1rem; /* Adjust button font size */
+    padding: 0.8rem 1.5rem; /* Adjust padding for buttons */
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align the footer content */
+    justify-content: center;
+    padding: 1.5rem; /* Add padding for better spacing */
+  }
+
+  footer nav {
+    display: flex;
+    justify-content: center; /* Center-align the navigation links */
+    flex-wrap: wrap; /* Wrap links if needed */
+    gap: 1rem; /* Add spacing between links */
+    margin-bottom: 1rem; /* Add spacing above the copyright text */
+  }
+
+  footer nav .nav-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow links to wrap if they exceed the width */
+    gap: 1rem; /* Add spacing between links */
+    list-style: none; /* Remove bullets */
+  }
+
+  footer nav .nav-links li a {
+    text-decoration: none; /* Remove underline */
+    font-size: 1rem; /* Adjust font size for readability */
+    color: black; /* Use a standard color */
+    transition: color 0.3s ease; /* Smooth hover effect */
+  }
+
+  footer nav .nav-links li a:hover {
+    color: gray; /* Change color on hover */
+  }
+
+  footer p {
+    font-size: 0.9rem; /* Slightly smaller text for copyright */
+    text-align: center; /* Center-align the copyright text */
+    margin-top: 0.5rem; /* Add spacing above the copyright text */
+  }
+}

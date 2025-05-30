@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Pavan.</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#Certifications">Certifications</a></li>
+          <li><a href="#Research">Research</a></li>
+          <li><a href="#Extracurricular">Extracurricular</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Pavan Vishnu Sai Bestha</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#Certifications" onclick="toggleMenu()">Certifications</a></li>
+          <li><a href="#Research" onclick="toggleMenu()">Research</a></li>
+          <li><a href="#Extracurricular" onclick="toggleMenu()">Extracurricular</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile photo.jpg" alt="Pavan profile picture"
+        class="pavanpic" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Pavan Vishnu Sai Bestha</h1>
+        <p class="section__text__p2">Full-Stack Developer | AWS Certified Developer | DevOps<br> MS in CS @University of Florida</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Pavan Vishnu Sai Bestha Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/pavan-vishnu-sai-bestha/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/pavanvishnusai'"
+          />
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#about'"
+      />
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Area of Expertise</h3>
+              <p>
+                Python, C, HTML, CSS, JavaScript, React.js, Express.js, Node.js, Django, Git, GitHub, Figma, Blender, Canva, Balsamiq, Miro, AWS services, AIML, Full Stack, Cloud, UIUX
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>M.Sc. Computer Science at University of Florida<br />B.Tech. Information Technology at Manipal University Jaipur</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                I’m Pavan Vishnu Sai Bestha, an AWS‑certified full‑stack engineer who lives at the junction of product, cloud and DevOps. I build React + TypeScript front ends and Node/Express or Spring Boot back ends, containerize them with Docker, and deliver to AWS (EC2, S3, Lambda, RDS, CloudFront) through automated GitHub Actions and Jenkins pipelines. My recent work cut Cinema Verde’s page‑load time by 35 %, trimmed storage costs 28 % and held 99.9 % uptime, while my MERN‑stack chatbot Gator.AI now serves 500+ monthly users at the University of Florida. From slinging code that handles 50 K traffic‑sensor events a day to embedding JWT, RBAC and AWS WAF for airtight security, I’m driven by measurable impact, clean architecture and a collaborative mindset that helps teams ship fast without sacrificing reliability.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section class="col" id="experience">
+      <h1 class="title">Experience</h1>
+        <div class="contents">
+            <div class="box">
+                <h2>Cinema Verde</h2>
+                <h4>Aug 2024 - Present</h4>
+                <h3>Full-Stack Developer</h3>
+                <p>I rebuilt the NGO’s platform on a React + Node stack in AWS (EC2, S3, RDS, Lambda, CloudFront), slashing page‑load time 35 % and boosting retention 30 % while maintaining 99.9 % uptime. A revamped data layer—PostgreSQL redesign, MongoDB for fast reads, and S3 media storage—cut costs 28 %, and AWS MediaConvert pushed 400+ videos to Amazon Prime, expanding reach 40 %. I automated daily, near‑zero‑rollback releases with GitHub Actions, Docker, and Elastic Beanstalk, hardened security (JWT, RBAC, WAF), and halved post‑release defects through robust Jest/Cypress/Postman tests. Mentoring a five‑person team in React, TypeScript, and UX practices raised sprint velocity 25 % and ensured 100 % policy compliance via NIST‑aligned cyber‑awareness training.</p>
+                <div class="btn-container">
+                  <br>
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://www.cinemaverde.org/'"
+                  >
+                    View website
+                  </button>
+                </div>
+            </div>
+            <div class="box">
+              <h2>I Ray IT Solutions</h2>
+              <h4>Jan 2022 – Dec 2022</h4>
+              <h3>Software Engineer</h3>
+              <p>Partnering with two Senior Software Engineers, I built a Java 11 / Spring Boot REST API that ingests 50 K traffic‑sensor events per day (peaks 2 K/min) with sub‑200 ms latency. I then delivered a React + TypeScript admin dashboard—based on Figma wireframes—that cut incident‑triage clicks from 8 to 5 and sped operator tasks by 15 %. A two‑tier data pipeline (PostgreSQL hot store, S3 cold archive) trimmed storage costs 20 %, while Dockerized micro‑services and on‑demand EC2 load‑test scripts kept spend within a student budget. Finally, I wired CloudWatch logs and SNS alerts to spot issues in under five minutes and cemented a DevOps mindset through Git‑flow, JUnit tests, and peer reviews.</p>
+          </div>
+            <div class="box">
+                <h2>Department of Mechanical MUJ</h2>
+                <h4>Aug 2021 - Dec 2021</h4>
+                <h3>Frontend Developer</h3>
+                <p>Designed an 8-semester course planning tool using Figma, Balsamiq, and Miro, improving user satisfaction by 30% and integrating accessibility features per WCAG standards.Conducted research, storyboarding, and feedback analysis from 50+ users, creating prototypes with error alerts and drag-and-drop</p>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='https://icsmart4.com/'"
+                  >
+                    View website
+                  </button>
+                </div>
+            </div>
+            <div class="box">
+              <h2>Bits Pilani Hyderabad Campus</h2>
+              <h4>Jan 2021 - Jul 2021</h4>
+              <h3>ML Research intern</h3>
+              <p>Conducted height estimation research using Arduino, enhancing accuracy by 15% and cutting processing time by 20%.Trained machine learning models on collected datasets, improving prediction accuracy by 25% Utilized OpenCV for face detection, optimizing algorithms to enhance real-time performance by 20% and improve reliability.</p>
+          </div>
+        </div>
+        <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section class="col" id="projects">
+      <h1 class="title">Projects</h1>
+      <div class="contents">
+          <div class="box">
+            <h2>Gator.AI</h2>
+            <h4>Chatbot Project</h4>
+            <p>Developed a MERN stack chatbot for the University of Florida, integrating OpenAI's GPT-3.5 Turbo model to provide real-time responses to student queries, achieving 95% accuracy in information retrieval. Implemented a user-friendly interface with React.js and Node.js, enabling seamless interaction and reducing response time by 40%. Deployed on AWS using Docker and Kubernetes, ensuring scalability and reliability.</p>
+          </div>
+          <div class="box">
+              <h2>Generative Expressive Avatars</h2>
+              <h4>AI-Driven Choreography Project</h4>
+              <p>Designed AI-powered avatars using Convolutional Neural Networks (CNNs) to analyze music genres, tempos, and emotional tones, improving choreography realism by 25%. Developed proof-of-concept choreographies in Blender with advanced rigging and animation techniques, producing human-like movements and increasing production efficiency by 30%.	Explored and prototyped future applications of Generative Adversarial Networks (GANs) and Recurrent Neural Networks (RNNs) to automate choreography creation, targeting a 40% expansion of a digital dance library.
+              </p>
+          </div>
+          <div class="box">
+            <h2>ASL Character Classification</h2>
+              <h4>Machine Learning Project</h4>
+              <p>Built a Convolutional Neural Network (CNN) using TensorFlow to classify nine ASL characters, achieving 90% accuracy through optimized architecture with Conv2D, MaxPooling2D, and dropout layers. Enhanced model performance with advanced data pre-processing techniques, including resizing, normalization, and augmentation (rotation, brightness, and contrast adjustments), improving generalization by 20%. Conducted extensive hyperparameter tuning with EarlyStopping and learning rate scheduling, reducing overfitting by 15% and ensuring efficient model convergence within 35 epochs.
+              </p>
+          </div>
+          <div class="box">
+              <h2>SafeWander</h2>
+              <h4>College Entrepreneurial Project</h4>
+              <p>Co-developed SafeWander, a wearable child safety device providing real-time tracking, customizable geo-fencing, and instant alerts, addressing a critical gap in child safety technology. Conducted 58+ interviews with parents, police, and fire departments, leveraging insights to refine the product design and create effective value propositions, lean canvases, and market strategies. Secured 2nd place in in-class investment pitches by presenting a financial plan projecting profitability by FY 2026, with a 52.6% net margin by FY 2027, and outlined plans for scaling manufacturing and distribution.
+              </p>
+          </div>
+          <div class="box">
+            <h2>Gator Library Management System</h2>
+            <h4>Advanced Data Structures Project</h4>
+            <p>Developed a Python-based library management system utilizing Red-Black Trees for efficient book operations and a Binary Minimum Heap for dynamic reservation handling, improving overall system performance by 30%. Implemented features like book insertion, deletion, borrowing, returning, and closest book searches, with file I/O for seamless execution of 50+ commands, ensuring robust library operations. Designed a modular and scalable system architecture with object-oriented programming principles, enhancing code clarity and maintainability while addressing real-world library challenges.
+            </p>
+          </div>
+          <div class="box">
+            <h2>File Transfer Protocol (FTP) System</h2>
+            <h4>Networking Project</h4>
+            <p>Developed a client-server FTP system in Python, leveraging sockets and multithreading to enable secure file upload, download, and real-time communication, with support for dynamic port assignment. Implemented robust file transfer operations, including file size validation, error handling, and segmented data transmission, ensuring reliability for multiple simultaneous clients. Enhanced usability with automated file segmentation, transfer progress tracking, and modular architecture, improving system scalability and reducing transfer latency by 20%.
+            </p>
+          </div>         
+          <div class="box">
+            <h2>Image Classification using supervised learning</h2>
+            <p>Applied supervised machine learning techniques to classify images of three sports personalities, achieving 96% model accuracy after training for 50 epochs.Preprocessed and labeled the dataset to ensure consistency and trained the model using a small dataset, demonstrating efficient feature extraction despite limited resources.Addressed computational challenges by optimizing batch size and training parameters, reducing processing time while maintaining high accuracy.  
+            </p>
+          </div>
+          <div class="box">
+            <h2>EventVoid</h2>
+            <p>Designed an interactive prototype to streamline event discovery and booking for University of Florida students, enhancing user engagement through wireframe flow diagrams and HCI-based design strategies. Conducted research and usability testing to improve event recommendations, leveraging user insights to optimize search functionalities and personalized suggestions. Utilized Python, Django, and HCI Research Methodologies to create a scalable platform, increasing event participation by improving ease of access and user experience.               
+            </p>
+          </div>
+          <div class="box">
+            <h2>Grodel</h2>
+            <h4>Grocery Selling Website</h4>
+            <p>Developed an E-commerce website specialized in grocery sales using HTML, CSS, JavaScript, and Bootstrap, delivering a responsive and user-friendly interface. Implemented dynamic features for seamless navigation, product categorization, and cart management to enhance the shopping experience. Designed the website architecture to ensure scalability and efficient item listing, setting a foundation for future integrations such as payment gateways and inventory tracking.               
+            </p>
+          </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#Certifications'"
+      />
+    </section>  
+    <section id="Certifications">
+      <h1 class="title">Certifications</h1>
+      <div class="certification-container">
+        <!-- Image Container -->
+        <div class="certification-image">
+          <img
+            src="./assets/aws developer certificate.jpg"
+            alt="AWS Developer Certificate"
+            class="certification-img"
+          />
+        </div>
+        <!-- Text Container -->
+        <div class="certification-text">
+          <h2>AWS Developer</h2>
+          <p>
+            AWS (Amazon Web Services) Certified Developer Associate. Earned
+            expertise in developing, deploying, and debugging cloud-based
+            applications using AWS services.
+          </p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://www.credly.com/badges/f99398d4-799a-470a-a551-07e430ab08e1'"
+            >
+              Verify
+            </button>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#Research'"
+      />
+    </section>
+    <section class="col" id="Research">
+      <h1 class="title">Research Paper</h1>
+      <div class="contents">
+          <div class="box">
+              <h2>International Conference on Computer Science and Artificial Intelligence</h2>
+              <h4>(ICCSAI-22)</h4>
+              <p>Presented a research paper titled "Choosing an Optimal Machine Learning Classifier for Facial Recognition" at the ICCSAI-22 held on June 25, 2022, in Hyderabad, India. Conducted a comparative analysis of six machine learning classifiers using the ORL dataset, achieving 97% accuracy in 0.34 seconds with the Linear Discriminant Analysis (LDA) classifier. Leveraged libraries like OpenCV (cv2) for training and testing, emphasizing processing efficiency and accuracy benchmarks. Published under Paper ID: SCIENCESOCIETY_21790, showcasing the results and contributing to advancements in facial recognition technologies.            
+              </p>
+              <br>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://ijercse.com/viewabstract.php?id=15914&volume=Volume9&issue=Issue7'"
+                >
+                  View Paper
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://www.technoarete.org/common_abstract/pdf/IJERCSE/v9/i7/Ext_18934.pdf'"
+                >
+                  View PDF
+                </button>
+              </div>
+          </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#Extracurricular'"
+      />
+    </section>  
+    <section id="Extracurricular">
+      <h1 class="title">Extracurricular</h1>
+      <div class="section-container">
+        <div class="details-container">
+          <h3>Academic Achievement, Extracurricular Activities</h3>
+          <p>•	Award-winning Charcoal Artist. <br>•	Silver Medalist in Boxing. <br> •	YouTube Creator (8,000+ subscribers).</p>
+        </div><br>
+        <div class="details-container">
+          <h3>Positions of Responsibility</h3>
+          <p>•	General Secretary, Scribbles (Art Club). <br>
+                •	Promotions Manager, Randomize (Technical Club). <br>
+                •	Content Writer & Designer, Electronic Society. <br>
+                •	1st Year Coordinator, Qureka (Quizzing Club). <br>
+                •	Core Committee Member, Discipline Committee. <br>
+                •	Volunteer, Oneiros, Techideate, BDC, and Elicit. <br>
+          </p>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>    
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:pavanvishnusai@gmail.com">pavanvishnusai@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/pavan-vishnu-sai-bestha/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#Certifications">Certifications</a></li>
+            <li><a href="#Research">Research</a></li>
+            <li><a href="#Extracurricular">Extracurricular</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Pavan Vishnu Sai Bestha. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
